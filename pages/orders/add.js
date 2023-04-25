@@ -21,30 +21,30 @@ const Order = () => {
     return(
         <>
             <div className={styles.container}>
-                <h1 className={styles.form_title}>Add a new customer</h1>
+                <h1 className={styles.form_title}>Add a new order</h1>
                 <form action="#" onSubmit={handleSubmit(save)}>
                     <div className={styles.main_user_info}>
                         <div className={styles.user_input_box}>
-                            <label htmlFor="name">Full Name</label>
+                            <label htmlFor="name">Item name</label>
                             <input type="text"
                                    id="name"
                                    name="name"
                                    {...register('name',
                                        {required: true,
                                                message: 'please enter a name' })}
-                                   placeholder="Enter Full Name"/>
+                                   placeholder="Enter item name"/>
 
                         </div>
 
                         <div className={styles.user_input_box}>
-                            <label htmlFor="email">Email</label>
-                            <input type="email"
-                                   id="email"
-                                   name="email"
-                                   {...register('email',
+                            <label htmlFor="quantity">Quantity</label>
+                            <input type="quantity"
+                                   id="quantity"
+                                   name="quantity"
+                                   {...register('quantity',
                                        {required: true,
-                                           message: 'please enter an email address' })}
-                                   placeholder="Enter Email"/>
+                                           message: 'please enter a quantity' })}
+                                   placeholder="Enter quantity"/>
                         </div>
 
 
